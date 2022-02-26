@@ -43,7 +43,11 @@ inquirer
         message: 'Who else is a contributor on this project?',
         name: 'contributing',
     },
-    
+    {
+      type: 'input',
+      message: 'What testing information should be included?',
+      name: 'tests',
+  },
 
     
   ])
@@ -51,26 +55,36 @@ inquirer
 
     const { title, description, installation, usage, license, contributing, tests, gitHub, email} = response;
     let readmeData = 
-    `
-    Title: ${title} 
-    Description: ${description} 
+`
+# **${title}** 
+## ${description} 
 
-    Table of Contents: 
-    Installation 
-    Usage 
-    License 
-    Contributing 
-    Tests 
-    Questions 
+### _Table of Contents_ 
+* Installation 
+* Usage 
+* License 
+* Contributing 
+* Tests 
+* Questions 
 
-    Installation: ${installation} 
-    Usage: ${usage} 
-    License: ${license} 
-    Contributing: ${contributing} 
-    Tests: ${tests} 
+### _Installation_ 
+${installation} 
 
-    If you have any further questions, please contact me at ${gitHub} or ${email}! 
-    `;
+### _Usage_ 
+${usage} 
+
+### _License_ 
+${license} 
+
+### _Contributing_ 
+${contributing} 
+
+### _Tests_ 
+${tests} 
+
+### _If you have any further questions, please contact me at ${gitHub} or ${email}!_ 
+
+`;
 
     fs.writeFile("readme.md", readmeData, (err) => {
         if (err)
