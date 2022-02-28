@@ -34,9 +34,10 @@ inquirer
         name: 'email',
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'What license should be listed for this project?',
         name: 'license',
+        choices: ['MIT', 'Apache-2.0', 'ISC', 'Unlicense'] 
     },
     {
         type: 'input',
@@ -53,28 +54,26 @@ inquirer
   ])
   .then((response) => {
 
-    const { title, description, installation, usage, license, contributing, tests, gitHub, email} = response;
+    const { title, description, installation, usage, license, contributing, tests, gitHub, email } = response;
     let readmeData = 
 `
-# **${title}** 
+# ${title} 
+[![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 ## ${description} 
 
 ### _Table of Contents_ 
-* Installation 
-* Usage 
-* License 
-* Contributing 
-* Tests 
-* Questions 
+* [Installation](#installation) 
+* [Usage](#usage) 
+* [License](#license) 
+* [Contributing](#contributing) 
+* [Tests](#tests) 
+* [Questions](#questions) 
 
 ### _Installation_ 
 ${installation} 
 
 ### _Usage_ 
 ${usage} 
-
-### _License_ 
-${license} 
 
 ### _Contributing_ 
 ${contributing} 
