@@ -64,7 +64,6 @@ inquirer
 ### _Table of Contents_ 
 * [Installation](#installation) 
 * [Usage](#usage) 
-* [License](#license) 
 * [Contributing](#contributing) 
 * [Tests](#tests) 
 * [Questions](#questions) 
@@ -81,7 +80,8 @@ ${contributing}
 ### _Tests_ 
 ${tests} 
 
-### _If you have any further questions, please contact me at ${gitHub} or ${email}!_ 
+### _Questions_ 
+### _If you have any further questions, please contact me at ${gitHub} on github.com or ${email}!_ 
 
 `;
 

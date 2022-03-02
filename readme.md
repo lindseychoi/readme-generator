@@ -1,7 +1,7 @@
 
-# readme generator 
-[![License](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-## lots of things to say here 
+# README GENERATOR 
+[![License](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://opensource.org/licenses/Unlicense)
+## This project allows the user to create quality readme files quickly and easily. 
 
 ### _Table of Contents_ 
 * [Installation](#installation) 
@@ -12,16 +12,16 @@
 * [Questions](#questions) 
 
 ### _Installation_ 
-i dont know 
+node, npm Inquirer, fs 
 
 ### _Usage_ 
-lots of other things 
+The intended usage for this project is for the user to be able to make readme files in a smaller amount of time that will help future users utilize their project correctly. 
 
 ### _Contributing_ 
-saslkjdfhlkzsjdfghrek;igh 
+just me 
 
 ### _Tests_ 
-none 
+none at this time 
 
-### _If you have any further questions, please contact me at lindseychoi or lindsey.e.choi!_ 
+### _If you have any further questions, please contact me at lindseychoi on github.com or lindsey.e.choi@gmail.com!_ 
 
